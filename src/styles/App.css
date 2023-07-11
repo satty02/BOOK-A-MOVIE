@@ -1,0 +1,70 @@
+.movie-column,
+.seat-column,
+.slot-column {
+  margin: 5px;
+  padding: 0 15px;
+  box-shadow: 0 0 0.5px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.movie-row,
+.seat-row,
+.slot-row {
+  border-radius: 10px;
+  border: 1px solid #3d3370;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.d-flex {
+  margin: 5vh;
+  margin-top: 6vh;
+  padding: 5vh;
+  background: linear-gradient(233deg, white 15%, #a786eb 100%);
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px #524388;
+}
+
+.seat-column {
+  min-width: 100px;
+  text-align: center;
+  padding-bottom: 15px;
+  border-color: #e5e5ed;
+}
+
+.book-button button {
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1em;
+  color: white;
+  background: linear-gradient(
+    233deg,
+    rgba(44, 209, 88, 1) 0%,
+    rgba(44, 108, 224, 1) 100%
+  );
+  padding: 5px 15px;
+  font-weight: 500;
+}
+
+input {
+  width: 50px;
+  border-color: rgb(196, 196, 196);
+  border-width: 1px;
+}
+
+.last-order {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.ticket {
+  box-shadow: 0px 0px 2px 5px #a57ba8;
+  width: auto;
+}
+
+a {
+  color: black;
+}
