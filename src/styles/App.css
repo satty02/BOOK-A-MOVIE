@@ -14,15 +14,35 @@
   padding: 10px;
   margin-bottom: 10px;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: whitesmoke;
 }
+
+.title{
+  margin: 5vh;
+  margin-top: 4vh;
+  padding: 3vh;
+  background:aliceblue;
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px #97949f;
+  text-align: left;
+  font-weight: bold;
+  color: #524388;
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
 
 .d-flex {
   margin: 5vh;
-  margin-top: 6vh;
+  margin-top: 5vh;
   padding: 5vh;
-  background: linear-gradient(233deg, white 15%, #a786eb 100%);
+  background: aliceblue;
   border-radius: 10px;
-  box-shadow: 0 0 0 4px #524388;
+  box-shadow: 0 0 0 4px #97949f;
 }
 
 .seat-column {
@@ -44,6 +64,11 @@
   );
   padding: 5px 15px;
   font-weight: 500;
+}
+
+.book-button button:hover {
+  background-color: rgba(44, 209, 88, 0.5);
+  cursor: pointer;
 }
 
 input {

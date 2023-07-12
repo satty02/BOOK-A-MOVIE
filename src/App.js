@@ -143,6 +143,8 @@ const App = () => {
   }
 
   return (
+    <>
+    <div className="title">BOOK-A-MOVIE</div>
     <div className="d-flex">
       {/* Booking Form */}
       <div className="container" style={{ width: "70%" }}>
@@ -154,7 +156,7 @@ const App = () => {
               key={index}
               className={`btn movie-column ${
                 selectedMovie === item ? "bg-info text-light" : "bg-light"
-              }`}
+              }` }
               name="movie"
               value={item}
               onClick={movieAndTimeValuesHandler}
@@ -256,7 +258,7 @@ const App = () => {
                 <hr />
                 <button
                   type="button"
-                  class="btn btn-outline-danger"
+                  class="btn btn-outline-danger book-button"
                   onClick={deletePreviousBookings}
                 >
                   Delete Previous Bookings
@@ -276,6 +278,7 @@ const App = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 export default App;
