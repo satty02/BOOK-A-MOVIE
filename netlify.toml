@@ -1,2 +1,5 @@
 [build]
 functions = "Backend"
+
+[[plugins]]
+package = "@netlify/plugin-functions-install-core"
