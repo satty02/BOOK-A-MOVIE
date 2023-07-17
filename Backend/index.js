@@ -10,6 +10,7 @@ const { connection } = require("./connector");
 const cors = require("cors");
 app.use(cors());
 
+
 connection();
 app.use("/", path);
 
