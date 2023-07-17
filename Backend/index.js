@@ -9,11 +9,17 @@ app.use(bodyParser.json());
 const { connection } = require("./connector");
 const cors = require("cors");
 app.use(cors());
+const paths = require('path')
 
 
 connection();
 app.use("/", path);
 
+
+app.get('/',(req,res)=>{
+    app.use(express.static(paths.resolve(__dirname,'./','build')));
+    res.sendFile(path.resolve(__dirname,'./','build','index.html'))
+})
 app.listen(port, () => console.log(`App listening on port ${port}!`));
 
 module.exports = app;
