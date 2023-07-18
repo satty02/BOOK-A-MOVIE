@@ -19,9 +19,9 @@ app.use("/", path);
 if (process.env.NODE_ENV === "production") {
     const path = require("path");
     console.log(__dirname)
-    app.use(express.static(path.resolve(__dirname, 'client', 'build')));
+    app.use(express.static(path.resolve(__dirname, "../", 'build')));
     app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'),function (err) {
+        res.sendFile(path.resolve(__dirname, '../', 'build', 'index.html'),function (err) {
             if(err) {
                 res.status(500).send(err)
             }
