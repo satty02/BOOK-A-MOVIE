@@ -29,7 +29,6 @@ router.post("/api/booking", async (req, res) => {
 
 //GET API
 router.get("/api/booking", async (req, res) => {
-  res.send('Hello')
   const data = await connection.find().exec();
   return res.status(200).send(data[data.length - 1]);
 });
