@@ -15,11 +15,20 @@ const paths = require('path');
 connection();
 app.use("/", path);
 
+// TO serve the static file from the build folder and send the index.tml
+if (process.env.NODE_ENV === "production") {
+    const path = require("path");
+    app.use(express.static(path.resolve(__dirname, 'client', 'build')));
+    app.get("*", (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'),function (err) {
+            if(err) {
+                res.status(500).send(err)
+            }
+        });
+    })
+}
 
-app.get('/',(req,res)=>{
-    app.use(express.static(paths.resolve(__dirname,'../','build')));
-    res.sendFile(path.resolve(__dirname,'../','build','index.html'))
-})
+
 app.listen(port, () => console.log(`App listening on port ${port}!`));
 
 module.exports = app;

@@ -1,8 +1,9 @@
 import "./styles/App.css";
-import "./styles/bootstrap.min.css";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { movies, slots, seats } from "./components/data";
+import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/js/dist/modal"
 
 const App = () => {
   // Initialize the bookingData with information from local storage, or use default values if local storage does not contain any data.
