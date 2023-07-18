@@ -83,7 +83,7 @@ const App = () => {
     setLoading(true);
     // send a POST request to the server with booking data
     await axios
-      .post("http://localhost:8080/api/booking", bookingData)
+      .post("book-a-movie.vercel.app/api/booking", bookingData)
       .then((res) => {
         // update lastBooking state with response data
         setLastBooking(res.data);
@@ -113,7 +113,7 @@ const App = () => {
     setLoading(true);
     // api call to get last booking details
     await axios
-      .get("http://localhost:8080/api/booking")
+      .get("book-a-movie.vercel.app/api/booking")
       .then((res) => {
         setLastBooking(res.data);
         setLoading(false);
@@ -132,7 +132,7 @@ const App = () => {
   async function deletePreviousBookings() {
     setLoading(true);
     await axios
-      .delete("http://localhost:8080/api/booking")
+      .delete("book-a-movie.vercel.app/api/booking")
       .then((res) => {
         alert(res.data);
       })
