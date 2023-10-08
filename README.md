@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# BookMyShow
 
 project successfully implements a movie booking system with a full-stack architecture. Users can select movie details, book seats, and view their previous bookings. The frontend manages user selections using state management, and the backend communicates with the database to store and retrieve data. Overall, the project provides a functional and user-friendly movie booking experience.
 
